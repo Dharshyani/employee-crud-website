@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEE NEXUS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>EMPLOYEE NEXUS</h2>
+
+    <form id="employeeForm">
+      <div class="form-grid">
+        <div class="upload-section">
+          <img id="profilePreview" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Icon">
+         <input type="file" id="profileImage" style="display:none;" accept="image/*" />
+          <button type="button" class="upload-btn" id="uploadBtn">Upload *</button>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Enter a Name *">
+          <input type="text" id="phone" placeholder="Personal Number *">
+          <textarea id="address" rows="2" placeholder="Address *">
+          </textarea>
+        </div>
+
+        <div class="form-group">
+          <select id="company">
+            <option value="">Select a Company *</option>
+            <option>Google</option>
+            <option>Amazon</option>
+            <option>Salesforce</option>
+          </select>
+          <select id="country">
+          <option value="">Select Country *</option>
+        </select>
+          <input type="email" id="email" placeholder="Email *">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <input type="text" id="designation" placeholder="Designation *">
+        <select id="state">
+        <option value="">Select State *</option>
+        </select>
+        <input type="text" id="pincode" placeholder="Pin Code *">
+      </div>
+
+      <div class="btn-section">
+        <button type="submit" class="btn-green">Register</button>
+        <button type="reset" class="btn-grey">Reset</button>
+      </div>
+    </form>
+
+    <p id="noUserMsg" style="margin-top:20px; display:none; color:#000; font-weight:bold;"></p>
+
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>User Profile</th>
+          <th>User Name</th>
+          <th>Company Name</th>
+          <th>Designation</th>
+          <th>Mobile Number</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="userData"></tbody>
+    </table>
+  </div>
+
+ <script src="script.js"></script>
+</body>
+</html> 
